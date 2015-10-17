@@ -1,0 +1,14 @@
+{
+  "name": "language-hombrew-formula",
+  "version": "0.0.0",
+  "description": "Homebrew formula support inlined diffs",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/josa42/atom-language-hombrew-formula",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

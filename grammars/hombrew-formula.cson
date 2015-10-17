@@ -1,0 +1,19 @@
+'scopeName': 'source.rb.hombrew-formula'
+'name': 'Ruby (Homebrew Formula)'
+'fileTypes': [
+  'rb'
+]
+'firstLineMatch': '^class [a-zA-Z0-09]+ < Formula$'
+'patterns': [{
+  'begin': '^(__END__)\n(.*\n)*'
+  'name': 'source.ruby.homebrew.patch'
+  'captures': {
+    '1': { 'name': 'keyword.other' }
+  }
+  'patterns': [{
+    'include': 'source.diff'
+  }]
+  'end': '\n^$'
+},{
+  'include': 'source.ruby'
+}]
