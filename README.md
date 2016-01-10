@@ -10,4 +10,4 @@ The [`language-diff`](https://atom.io/packages/language-diff) package is require
 
 ## Screenshot
 
-![Screenshot](./etc/atom-homebrew-screenshot.png)
+![](https://raw.githubusercontent.com/josa42/atom-language-hombrew-formula/master/screenshot.png)
