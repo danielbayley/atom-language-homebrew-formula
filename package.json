@@ -1,6 +1,6 @@
 {
   "name": "language-homebrew-formula",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Homebrew formula support inlined diffs",
   "keywords": [
     "language",
