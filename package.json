@@ -6,7 +6,7 @@
     "language",
     "grammar"
   ],
-  "repository": "https://github.com/josa42/atom-language-hombrew-formula",
+  "repository": "https://github.com/josa42/atom-language-homebrew-formula",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
