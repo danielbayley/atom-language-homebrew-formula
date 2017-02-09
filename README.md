@@ -1,4 +1,4 @@
-# Homebrew fomula language package
+# Homebrew formula language package
 
 [Atom](https://atom.io) syntax highlighting package for [Homebrew](http://brew.sh) formulae with inline diff support after an `__END__` keyword.
 
