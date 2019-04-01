@@ -3,7 +3,7 @@
 'fileTypes': [
   'rb'
 ]
-'firstLineMatch': '^class [a-zA-Z0-09]+ < Formula$'
+'firstLineMatch': '^(class [a-zA-Z0-09]+ < Formula|cask .[a-z_-]+. do)$'
 'patterns': [{
   'begin': '^(__END__)\n(.*\n)*'
   'name': 'source.ruby.homebrew.patch'
