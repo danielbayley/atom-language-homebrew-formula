@@ -1,19 +1,13 @@
-'scopeName': 'source.rb.hombrew-formula'
-'name': 'Ruby (Homebrew Formula)'
-'fileTypes': [
-  'rb'
+scopeName: 'source.rb.homebrew-formula'
+name: 'Ruby (Homebrew Formula)'
+fileTypes: ['rb', 'Brewfile']
+firstLineMatch: '^(class [a-zA-Z0-09]+ < Formula|cask .[a-z_-]+. do)$'
+patterns: [
+  begin: '^(__END__)\n(.*\n)*'
+  name: 'source.ruby.homebrew.patch'
+  captures: 1: name: 'keyword.other'
+  patterns: [ include: 'source.diff']
+  end: '\n^$'
+,
+  include: 'source.ruby'
 ]
-'firstLineMatch': '^(class [a-zA-Z0-09]+ < Formula|cask .[a-z_-]+. do)$'
-'patterns': [{
-  'begin': '^(__END__)\n(.*\n)*'
-  'name': 'source.ruby.homebrew.patch'
-  'captures': {
-    '1': { 'name': 'keyword.other' }
-  }
-  'patterns': [{
-    'include': 'source.diff'
-  }]
-  'end': '\n^$'
-},{
-  'include': 'source.ruby'
-}]

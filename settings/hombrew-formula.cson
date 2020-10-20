@@ -1,0 +1,3 @@
+'.source.rb.homebrew-formula':
+  editor:
+    commentStart: '# '
