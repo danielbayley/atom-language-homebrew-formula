@@ -1,21 +1,42 @@
-# Homebrew formula language package
+[![badge][apm]][package]
+[![badge][downloads]][package]
+[![badge][chat]][#slack]
+[![badge][forum]][discuss]
 
-![Project: Not maintained](https://img.shields.io/badge/Project-Not:wq_maintained-red.svg)
+[Atom] language _[Homebrew]_
+============================
+Atom [language] support for Homebrew _[formula]e_ and _[Cask]s_, including syntax highlighting, with inline [diff] support.
 
----
+Install
+-------
+~~~ sh
+apm install language-homebrew-formula #language-diff modular-snippets
+~~~
 
-**Note: The repository is not maintained. If you would like to take over, please open an issue!**
+See _atom-[linter-homebrew-formula]_ for additional help writing formulae.
 
----
+License
+-------
+[MIT] © [Daniel Bayley], [Josa Gesell] [et al.]
 
-[Atom](https://atom.io) syntax highlighting package for [Homebrew](http://brew.sh) formulae with inline diff support after an `__END__` keyword.
+[MIT]:                      LICENSE.md
+[Daniel Bayley]:            https://github.com/danielbayley
+[Josa Gesell]:              https://github.com/josa42
+[et al.]:                   https://github.com/danielbayley/atom-language-homebrew-formula/graphs/contributors
 
-This package was converted from the [`Homebrew Formula.tmLanguage`](https://github.com/samueljohn/Homebrew-formula-syntax) Sublime Text package by [Samuel John](http://www.SamuelJohn.de).
+[apm]:                      https://flat.badgen.net/apm/v/language-homebrew-formula?color=3FA674&labelColor=584B4F
+[downloads]:                https://flat.badgen.net/apm/dl/language-homebrew-formula?color=FFC31F&labelColor=584B4F
+[package]:                  https://atom.io/packages/language-homebrew-formula
+[chat]:                     https://flat.badgen.net/badge/chat/slack/3FA674?labelColor=584B4F
+[#slack]:                   https://atomio.slack.com
+[forum]:                    https://flat.badgen.net/badge/forum/discuss/FFC31F?labelColor=584B4F
+[discuss]:                  https://discuss.atom.io
 
-## Requirements
+[atom]:                     https://atom.io
+[language]:                 https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar
+[diff]:                     https://atom.io/packages/language-diff
+[linter-homebrew-formula]:  https://atom.io/packages/linter-homebrew-formula
 
-The [`language-diff`](https://atom.io/packages/language-diff) package is required to highlight inline diffs.
-
-## Screenshot
-
-![](https://raw.githubusercontent.com/josa42/atom-language-hombrew-formula/master/screenshot.png)
+[homebrew]:                 https://brew.sh
+[formula]:                  https://docs.brew.sh/Formula-Cookbook
+[cask]:                     https://github.com/Homebrew/homebrew-cask/blob/master/doc/development/adding_a_cask.md
