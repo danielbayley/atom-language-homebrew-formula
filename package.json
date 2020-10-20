@@ -1,14 +1,56 @@
 {
   "name": "language-homebrew-formula",
   "version": "1.1.0",
-  "description": "Homebrew formula support inlined diffs",
+  "description": "Atom language support for Homebrew formulae and Casks.",
   "keywords": [
     "language",
-    "grammar"
+    "grammar",
+    "homebrew",
+    "cask",
+    "ruby",
+    "macos",
+    "osx"
   ],
-  "repository": "https://github.com/josa42/atom-language-homebrew-formula",
+  "homepage": "http://github.com/danielbayley/atom-language-homebrew-formula#readme",
+  "repository": "danielbayley/atom-language-homebrew-formula",
+  "bugs": "https://github.com/danielbayley/atom-language-homebrew-formula/issues",
+  "author": "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)",
   "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "season": "^6.0.2"
+  },
+  "dependencies": {
+    "atom-package-deps": "^7.0.2"
+  },
+  "package-deps": [
+    {
+      "name": "language-diff"
+    },
+    {
+      "name": "modular-snippets"
+    }
+  ],
+  "os": [
+    "darwin"
+  ],
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "lint-staged": {
+    "*.cson": [
+      "csonc"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "scripts": {
+    "test": "csonc */*.cson > /dev/null",
+    "prepublishOnly": "npm test"
   }
 }
